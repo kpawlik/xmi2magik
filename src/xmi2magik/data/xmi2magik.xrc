@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="cp1250"?>
+<resource>
+  <object class="wxFrame" name="FRAME1" subclass="sub">
+    <title>Xmi2Magik</title>
+    <object class="wxPanel">
+      <object class="wxBoxSizer">
+        <orient>wxVERTICAL</orient>
+        <object class="sizeritem">
+          <object class="wxStaticBoxSizer">
+            <label>XMI file</label>
+            <orient>wxHORIZONTAL</orient>
+            <object class="sizeritem">
+              <object class="wxTextCtrl" name="tb_xmi_file_name"/>
+              <option>1</option>
+            </object>
+            <object class="sizeritem">
+              <object class="wxButton" name="bt_xmi_file_name">
+                <label>Browse</label>
+              </object>
+              <option>0</option>
+            </object>
+          </object>
+          <flag>wxEXPAND</flag>
+        </object>
+        <object class="sizeritem">
+          <object class="wxStaticBoxSizer">
+            <label>Text encoding</label>
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+              <object class="wxTextCtrl" name="tb_encoding">
+                <value> iso8859_1</value>
+              </object>
+              <flag>wxEXPAND|wxGROW</flag>
+            </object>
+          </object>
+          <flag>wxEXPAND|wxGROW</flag>
+        </object>
+        <object class="sizeritem">
+          <object class="wxStaticBoxSizer">
+            <label>Pragma topic</label>
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+              <object class="wxTextCtrl" name="tb_pragma"/>
+              <flag>wxEXPAND</flag>
+            </object>
+          </object>
+          <flag>wxEXPAND</flag>
+        </object>
+        <object class="sizeritem">
+          <object class="wxStaticBoxSizer">
+            <label>Package</label>
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+              <object class="wxComboBox" name="tb_package">
+                <content>
+                  <item>sw</item>
+                  <item>user</item>
+                </content>
+                <selection>0</selection>
+                <style>wxCB_READONLY</style>
+              </object>
+              <flag>wxEXPAND</flag>
+            </object>
+          </object>
+          <flag>wxEXPAND</flag>
+        </object>
+        <object class="sizeritem">
+          <object class="wxStaticBoxSizer">
+            <label>File header</label>
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+              <object class="wxTextCtrl" name="tb_file_header">
+                <value></value>
+                <size>300,100</size>
+                <style>wxTE_MULTILINE</style>
+              </object>
+              <option>1</option>
+              <flag>wxEXPAND|wxGROW</flag>
+              <minsize>300,200</minsize>
+            </object>
+          </object>
+          <option>1</option>
+          <flag>wxEXPAND|wxGROW</flag>
+        </object>
+        <object class="spacer">
+          <minsize>20, 100</minsize>
+          <size>10</size>
+        </object>
+        <object class="sizeritem">
+          <object class="wxStaticBoxSizer">
+            <label>Target folder</label>
+            <orient>wxHORIZONTAL</orient>
+            <object class="sizeritem">
+              <object class="wxTextCtrl" name="tb_target_folder"/>
+              <option>1</option>
+            </object>
+            <object class="sizeritem">
+              <object class="wxButton" name="bt_target_folder">
+                <label>Browse</label>
+              </object>
+              <option>0</option>
+            </object>
+          </object>
+          <flag>wxEXPAND</flag>
+        </object>
+        <object class="spacer">
+          <minsize>20, 100</minsize>
+          <size>20</size>
+        </object>
+        <object class="sizeritem">
+          <object class="wxBoxSizer">
+            <orient>wxHORIZONTAL</orient>
+            <object class="sizeritem">
+              <object class="wxButton" name="bt_save_options">
+                <label>Save options</label>
+              </object>
+              <flag>wxALIGN_RIGHT|wxALIGN_BOTTOM</flag>
+            </object>
+            <object class="spacer">
+              <size>10</size>
+            </object>
+            <object class="sizeritem">
+              <object class="wxButton" name="bt_generate">
+                <label>Generate</label>
+              </object>
+              <flag>wxALIGN_RIGHT|wxALIGN_BOTTOM</flag>
+            </object>
+            <object class="spacer">
+              <size>10</size>
+            </object>
+            <object class="sizeritem">
+              <object class="wxButton" name="bt_close">
+                <label>Close</label>
+              </object>
+              <flag>wxALIGN_RIGHT|wxALIGN_BOTTOM</flag>
+            </object>
+          </object>
+          <flag>wxALIGN_RIGHT|wxALIGN_BOTTOM</flag>
+        </object>
+      </object>
+      <style>wxTAB_TRAVERSAL|wxCLIP_CHILDREN</style>
+    </object>
+    <size>420, 500</size>
+    <object class="wxStatusBar">
+      <style>wxST_SIZEGRIP</style>
+    </object>
+  </object>
+</resource>
